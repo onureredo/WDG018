@@ -1,0 +1,28 @@
+.gallery-container {
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  gap: 16px; /* This adds space between the grid items */
+  margin: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item {
+  overflow: hidden; /* Ensures the content fits within the grid area */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}

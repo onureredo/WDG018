@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: all 1s;
+}

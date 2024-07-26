@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout Systems Final Exercise</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONT IMPORT FROM GOOGLE -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              dancing: ['Dancing Script'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="bg-slate-800 p-4">
+      <ul class="flex justify-around text-white font-bold text-lg">
+        <li><a href="#" class="hover:bg-slate-600 p-4">HOME</a></li>
+        <li><a href="#" class="hover:bg-slate-600 p-4">ABOUT</a></li>
+        <li><a href="#" class="hover:bg-slate-600 p-4">SERVICES</a></li>
+        <li><a href="#" class="hover:bg-slate-600 p-4">CONTACT</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container mx-auto">
+        <h1 class="text-7xl text-center font-dancing my-6">ART GALLERY</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+          <div>
+            <img
+              src="https://picsum.photos/400"
+              alt="Gallery image 1"
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://picsum.photos/500"
+              alt="Gallery image 2"
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://picsum.photos/600"
+              alt="Gallery image 3"
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://picsum.photos/700"
+              alt="Gallery image 4"
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://picsum.photos/800"
+              alt="Gallery image 5"
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://picsum.photos/900"
+              alt="Gallery image 6"
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-slate-800 p-4 text-white p-8 bg-">
+      <div class="container mx-auto flex flex-wrap justify-around">
+        <div>
+          <h2 class="text-xl mb-4">LOGO</h2>
+        </div>
+        <div>
+          <h2 class="text-xl mb-4">About Us</h2>
+          <ul>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl mb-4">Contact</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Sponsorship</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl mb-4">Social Media</h2>
+          <ul>
+            <li><a href="#">Social Media 1</a></li>
+            <li><a href="#">Social Media 2</a></li>
+            <li><a href="#">Social Media 3</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl mb-4">Join Our Newsletter</h2>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your E-mail"
+              class="p-2 rounded"
+            />
+            <button type="submit" class="p-2 bg-yellow-500 rounded">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
