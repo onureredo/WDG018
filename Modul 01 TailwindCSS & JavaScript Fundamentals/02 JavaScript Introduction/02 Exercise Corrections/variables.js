@@ -1,3 +1,4 @@
+// VARIABLES
 // 1- Declare Variables with let and const:
 // Use let to declare a variable named age and assign it the value 25.
 let age = 25;

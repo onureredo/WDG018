@@ -1,3 +1,4 @@
+// ARITHMETIC
 // 1- Create a variable that stores a number.
 let num = 10;
 
