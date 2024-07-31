@@ -86,16 +86,16 @@ const students = ['Student1', 'Student2', 'Student3', 'Student4'];
 // students.forEach((student) => console.log(`${student} is here`));
 
 // CALLBACK ist eine Funktion, die als Argument an eine andere Funktion übergeben und dort ausgeführt wird.
-// function greet(name) {
-//   console.log('Hello, ' + name);
-// }
+function greet(name) {
+  console.log('Hello, ' + name);
+}
 
-// function userGreet(callback) {
-//   const name = prompt('Please enter your name');
-//   callback(name);
-// }
+function userGreet(callback) {
+  const name = prompt('Please enter your name');
+  callback(name);
+}
 
-// userGreet(greet);
+userGreet(greet);
 
 //HOF / HIGHER ORDER ARRAY METHODS
 
