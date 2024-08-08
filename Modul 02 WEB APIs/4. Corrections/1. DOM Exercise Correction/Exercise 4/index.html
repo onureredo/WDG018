@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="flex flex-col items-center justify-center bg-gray-100 p-4">
+    <form
+      id="contact-form"
+      class="max-w-md w-full bg-white p-8 rounded shadow-md"
+    >
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-bold mb-2"
+          >Name</label
+        >
+        <input
+          id="name"
+          type="text"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-bold mb-2"
+          >Email</label
+        >
+        <input
+          id="email"
+          type="email"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-gray-700 font-bold mb-2"
+          >Message</label
+        >
+        <textarea
+          id="message"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          rows="5"
+        ></textarea>
+      </div>
+      <div class="flex items-center justify-between">
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+    <h3 class="text-gray-700 font-bold">Data</h3>
+    <p
+      id="output"
+      class="mt-4 p-4 bg-white text-white rounded shadow-md max-w-md w-full"
+    ></p>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Exercise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col items-center justify-center bg-gray-100 p-4">
+    <div class="space-y-4">
+      <button
+        id="add-item-btn"
+        class="px-4 py-2 bg-blue-500 hover:bg-blue-400 text-white rounded"
+      >
+        Add Item
+      </button>
+      <button
+        id="alert-btn"
+        class="px-4 py-2 bg-green-500 hover:bg-green-400 text-white rounded"
+      >
+        Show Alert
+      </button>
+      <button
+        id="console-btn"
+        class="px-4 py-2 bg-red-500 hover:bg-red-400 text-white rounded"
+      >
+        Log to Console
+      </button>
+    </div>
+    <ul
+      id="item-list"
+      class="mt-4 w-full max-w-md h-40 overflow-y-scroll bg-white shadow-md rounded p-4"
+    ></ul>
+    <script src="script.js"></script>
+  </body>
+</html>

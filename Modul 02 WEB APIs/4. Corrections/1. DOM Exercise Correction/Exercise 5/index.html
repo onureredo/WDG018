@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center w-full md:w-96">
+      <div class="mb-4">
+        <h2 class="text-2xl font-bold">Score</h2>
+        <div class="flex justify-between mt-2">
+          <div>User: <span id="user-score">0</span></div>
+          <div>Computer: <span id="computer-score">0</span></div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <h3 class="text-xl font-semibold mb-2">Choose:</h3>
+        <div id="selection" class="flex justify-around gap-3">
+          <button class="bg-blue-400 text-white py-2 px-4 rounded" id="rock">
+            Rock
+          </button>
+          <button class="bg-green-400 text-white py-2 px-4 rounded" id="paper">
+            Paper
+          </button>
+          <button class="bg-red-400 text-white py-2 px-4 rounded" id="scissors">
+            Scissors
+          </button>
+        </div>
+      </div>
+      <div class="mb-4">
+        <h3 class="text-xl font-semibold mb-2">Result:</h3>
+        <div id="result" class="bg-gray-200 py-4 rounded">No result yet</div>
+      </div>
+      <button
+        class="bg-purple-500 text-white py-2 px-4 rounded mt-4"
+        id="play-button"
+      >
+        Play Round
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
