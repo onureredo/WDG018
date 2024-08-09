@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 mt-5 flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md w-96">
+      <h1 class="text-2xl font-bold mb-4">Not really famous quotes...</h1>
+      <form>
+        <input
+          id="userInput"
+          type="text"
+          class="border p-2 w-full mb-4"
+          placeholder="Enter a not very famous quote..."
+        />
+        <small>Keep it safe for work, kiddos!</small
+        ><button
+          class="bg-blue-500 hover:bg-blue-400 text-white p-2 rounded w-full"
+        >
+          Submit
+        </button>
+      </form>
+      <ul class="mt-4 bg-gray-100 h-60 overflow-y-scroll"></ul>
+      <button
+        id="reload"
+        class="mt-5 px-4 py-2 bg-blue-500 hover:bg-blue-400 text-white rounded"
+      >
+        Reload
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
