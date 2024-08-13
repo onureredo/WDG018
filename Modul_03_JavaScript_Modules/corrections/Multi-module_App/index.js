@@ -1,0 +1,21 @@
+import { getProducts } from './modules/network.js';
+import { albertsFn, displayProducts } from './modules/ui.js';
+import { handleProductsClick } from './modules/storage.js';
+
+console.log('Läuft');
+
+window.addEventListener('load', async () => {
+  const products = await getProducts(); // getProduct() gibt ein Promise zurück, also müssen wir warten, bis es aufgelöst wird
+  // console.log(products);
+
+  displayProducts(products);
+
+  // albertsFn();
+  handleProductsClick();
+
+  // hier lesen wir die Dinge aus dem localStorage doppel. Einmal muss der gesamte String in ein Array umgewandelt werden.
+  // Wenn er Objekte enthält, dann parsen wir diese nocheinmal extra, denn wir mussten sie vor dem speichern selbst in Strings umwandeln.
+  // Das ? ist sog. 'optional chaining' - nut wenn wir etwas im localStorage haben, dann versuchen wir über die Elemente zu loopen.
+  const storedItems = JSON.parse(localStorage.getItem('cart'))?.map((item) => JSON.parse(item));
+  console.log(storedItems);
+});
