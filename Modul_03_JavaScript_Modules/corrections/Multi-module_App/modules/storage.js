@@ -22,4 +22,10 @@ const handleProductsClick = () => {
   });
 };
 
-export { handleProductsClick };
+const alternativeStoreProduct = (product) => {
+  const storedItems = JSON.parse(localStorage.getItem('cart')) || [];
+  storedItems.push(product);
+  localStorage.setItem('cart', JSON.stringify(storedItems));
+};
+
+export { alternativeStoreProduct, handleProductsClick };
