@@ -1,0 +1,10 @@
+# Alle Ordner und Dateien die hier aufgelistet sind, werden nicht in das Git Repo eingeschlossen.
+# Damit verhintert ihr, dass z.B. Api Keys, die ganzen Zusatzprogramme in den node_modules oder persönliche Notizen auf GitHub landen.
+# .env und dist sind hier nur zur Veranschaulichung auskommentiert.
+
+# .env
+node_modules
+# dist
+.parcel-cache
+notizen
+*Notes.md

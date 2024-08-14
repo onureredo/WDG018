@@ -13,7 +13,7 @@ window.addEventListener('load', async () => {
   // albertsFn();
   // handleProductsClick();
 
-  // Hier lesen wir die Dinge aus dem localStorage doppel. Einmal muss der gesamte String in ein Array umgewandelt werden.
+  // Hier lesen wir die Dinge aus dem localStorage doppelt. Einmal muss der gesamte String in ein Array umgewandelt werden.
   // Wenn er Objekte enthält, dann parsen wir diese noch einmal extra, denn wir mussten sie vor dem Speichern selbst in Strings umwandeln.
   // Das ? ist sog. 'optional chaining' - nur wenn wir etwas im localStorage haben, dann versuchen wir über die Elemente zu loopen.
   // const storedItems = JSON.parse(localStorage.getItem('cart'))?.map((item) => JSON.parse(item));
