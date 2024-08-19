@@ -3,7 +3,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import StudentCard from './components/StudentCard';
-import { studentData, students } from './data/student';
+// import { studentData, students } from './data/student';
+import { students } from './data/student';
 
 // document.querySelector("button").addEventListener
 
