@@ -21,3 +21,32 @@
   display: flex;
   justify-content: space-between;
 }
+
+.card {
+  display: grid;
+  grid-template-rows: 13rem auto;
+  width: 13rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid slateblue;
+  text-indent: -1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h2 {
+    font-weight: 600;
+    padding-left: 2rem;
+    letter-spacing: 1px;
+  }
+  ul {
+    margin: 0.5rem;
+    padding-left: 1rem;
+  }
+  .grade {
+    text-align: end;
+    padding-right: 1rem;
+  }
+}
