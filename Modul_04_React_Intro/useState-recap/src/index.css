@@ -328,3 +328,13 @@ body,
 .night .bulb-middle-3 {
   border-top: 30px solid #fe3;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-block: 2rem;
+
+  h2 {
+    color: purple;
+  }
+}

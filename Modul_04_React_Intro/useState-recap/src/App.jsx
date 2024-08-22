@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Counter from './components/Counter';
 import LightBulb from './components/LightBulb';
+import ContactForm from './components/ContactForm';
 
 function App() {
   const [numberOne, setNumberOne] = useState(0);
@@ -27,6 +28,7 @@ function App() {
       <br />
       <button onClick={handleChange}>Switch</button>
       <LightBulb isSwitched={isSwitched} />
+      <ContactForm />
     </>
   );
 }
