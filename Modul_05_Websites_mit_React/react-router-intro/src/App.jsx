@@ -5,12 +5,14 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import AComponent from './components/AComponent';
 import BComponent from './components/BComponent';
+import SingleStar from './pages/SingleStar';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />}>
       <Route index element={<Home />} />
       <Route path='about' element={<About />} />
+      <Route path='star/:id' element={<SingleStar />} />
       <Route path='contact' element={<Contact />}>
         <Route index element={<AComponent />} />
         <Route path='b' element={<BComponent />} />
