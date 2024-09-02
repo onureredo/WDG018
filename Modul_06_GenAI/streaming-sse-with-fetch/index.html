@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-darcula.min.css" rel="stylesheet" />
+</head>
+
+<body class="h-screen container mx-auto p-5 flex flex-col justify-between gap-5">
+  <div class=" w-full p-8 bg-slate-100 rounded-lg shadow-md">
+    <form>
+      <input id="stream" type="checkbox" />
+      <label for="stream">Stream response?</label>
+      <textarea id="prompt" rows="5" placeholder="Ask me anything..."
+        class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+      <button id="submit" type="submit"
+        class="mt-4 w-full px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        Submit✨
+      </button>
+    </form>
+  </div>
+  <div id="results" class="h-2/3 w-full p-8 bg-slate-100 rounded-lg shadow-md"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.9.0/prism.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- Wäre Gandalf Lehrer in Hogwarts, welches Fach würde er unterrichten? -->
+<!-- Schreibe mit bitte eine recursive Fibonnaci Funktion in JavaScript. -->
