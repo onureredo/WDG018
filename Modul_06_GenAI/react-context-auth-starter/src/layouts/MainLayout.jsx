@@ -5,6 +5,7 @@ import AuthContextProvider from '../contexts/AuthContext';
 const MainLayout = () => {
   return (
     <>
+      {/* Alle Komponenten, die zugang zum Context brauchen, werden in ihn hineingepackt */}
       <AuthContextProvider>
         <Navbar />
         <Outlet />

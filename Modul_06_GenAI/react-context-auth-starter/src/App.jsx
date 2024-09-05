@@ -15,6 +15,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path='login' element={<LogIn />} />
       <Route path='signup' element={<SignUp />} />
+      {/* Alle geschützten Inhalte sind in einem extra Layout, das den Zustand eingeloggt/ausgeloggt überprüft */}
       <Route path='user' element={<ProtectedLayout />}>
         <Route path='post-stuff' element={<PostStuff />} />
       </Route>
