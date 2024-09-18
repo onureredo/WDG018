@@ -11,3 +11,14 @@ fs.readFile('shrek.txt', 'utf-8', (error, data) => {
 });
 
 console.log('Continuing with other operations');
+
+// import { readFile } from 'fs/promises';
+
+// console.log('start');
+// try {
+//   const fileContent = await readFile('shrek.txt', 'utf8');
+//   console.log(fileContent);
+// } catch (error) {
+//   console.error('there was an error:', error.message);
+// }
+// console.log('end');
