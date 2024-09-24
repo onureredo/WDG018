@@ -30,18 +30,18 @@ app.get('/data', (req, res) => {
   };
   res.json(data);
 });
+app.get('/products', (req, res) => res.json(products));
 
-// app.get('/products', (req, res) => res.json(products));
-app.get('/products', async (req, res) => {
-  try {
-    const products = await fetch('https://fakestoreapi.com/products');
-    const data = await products.json();
-    res.json(data);
-  } catch (error) {
-    console.log(error);
-    res.status(500).send('Server Errror');
-  }
-});
+// app.get('/products', async (req, res) => {
+//   try {
+//     const products = await fetch('https://fakestoreapi.com/products');
+//     const data = await products.json();
+//     res.json(data);
+//   } catch (error) {
+//     console.log(error);
+//     res.status(500).send('Server Errror');
+//   }
+// });
 
 // Redirect
 app.get('/redirect', (req, res) => res.redirect('/data'));
