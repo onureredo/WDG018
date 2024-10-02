@@ -2,14 +2,16 @@ import pg from 'pg';
 const { Pool } = pg;
 
 const pool = new Pool({
-  host: process.env.PG_HOST,
-  database: process.env.PG_DATABASE,
-  user: process.env.PG_USER,
-  password: process.env.PG_PASSWORD,
-  port: 5432,
-  ssl: {
-    rejectUnauthorized: true,
-  },
+  // host: process.env.PG_HOST,
+  // database: process.env.PG_DATABASE,
+  // user: process.env.PG_USER,
+  // password: process.env.PG_PASSWORD,
+  // port: 5432,
+  // ssl: {
+  //   rejectUnauthorized: true,
+  // },
+
+  connectionString: process.env.PG_URI,
 });
 
 const connectDB = async () => {
